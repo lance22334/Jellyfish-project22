@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Aspira;
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.otf')
+format('opentype');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: JaneAusten;
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.woff')
+    format('woff'),
+     url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Pesaro;
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section{
+    border: 1px solid #777777;
+    overflow: hidden;
+    max-width: 720px;
+    position: relative;
+    margin-top: 2rem;
+}
+
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+}
+
+h1{
+    font-family: Pesaro, Arial, sans-serif;
+    font-size: 5rem;
+}
+
+header h1{
+    margin: 0; text-align: right;
+    line-weight: .6; padding-right: 3rem;
+}
+
+main{
+    margin-top: 2rem;
+    display: flex;
+    margin-bottom: 4rem
+}
+
+h1#issue-info{
+    font-size: 3rem;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    text-align: center; width: 7rem;
+}
+
+h1 span#volume{
+    display: inline-block;
+    transform: rotate(90deg) translateX(17rem);
+    margin-left: -29px;
+}
+
+h1 span#issue{
+    display: block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 8rem;
+}
+
+
+h1 span#issue sup{
+    line-height: 1;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+time{
+width: 100%; display: block;
+position: absolute; bottom: 0;
+display: block; font-size: 1.2rem;
+margin-top: 4rem;
+padding-top: 1rem; padding-bottom: 1rem;
+}
+
+time, h2 {
+    font-family: Aspira;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+header h2 {
+    width: 15rem;
+    font-size: 1.2rem;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    color: #333;
+    margin-top: 0;
+}
+
+span#period {
+    display: inline-block;
+    margin-left: -1.2rem;
+}
+span#number { padding-left: .5rem; }
+figure img {
+    display: block; width: 40%;
+    margin: 2 auto;}
+
+figure figcaption {
+    font-family: JaneAusten, script;
+    color: #aa8; font-size: 1.1rem;
+    transform: rotate(-90deg) translate(36rem,-1rem);
+}
+@media screen and (max-width: 750px) {
+    figure img { width: 80%; }
+    figure figcaption { transform: none; }
+    main { margin-top: 0; }
+
+
